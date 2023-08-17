@@ -54,12 +54,3 @@ h1 {
   border: 0 0 2px 0;
   cursor: pointer;
 }
-
-.fa-trash {
-  margin-left: 0.75rem;
-}
-
-.completed {
-  color: #c5aeff;
-  text-decoration: line-through;
-}

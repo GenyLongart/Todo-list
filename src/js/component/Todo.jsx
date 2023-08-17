@@ -1,15 +1,16 @@
 import React from 'react'
-import BsTrash from 'react-icons/fa';
+import {BsFillTrashFill} from 'react-icons/bs';
+import {BsPencilSquare} from 'react-icons/bs';
 
-const Todo = () => {
+const Todo = ({task, deleteTodo, editTodo}) => {
   return (
     <div className='Todo'>
-      <p>Go to school</p>
+      <p>{task.task}</p>
       <div>
-       
+        <BsFillTrashFill onClick={() => deleteTodo(task.id)}/>
       </div>
     </div>
   )
 }
 
-export default Todo
+export default Todo;
