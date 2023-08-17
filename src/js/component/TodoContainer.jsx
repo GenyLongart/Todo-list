@@ -7,7 +7,6 @@ const TodoContainer = () => {
 
   const addTodo = (todo) => {
     setTodos([...todos, { id: todo, task: todo, completed: false, editing: false }]);
-    console.log(todos);
   };
 
   const deleteTodo = (id) => {
